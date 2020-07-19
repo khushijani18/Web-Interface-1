@@ -76,17 +76,9 @@ namespace WebInterfaceDsign
             DataTable dt = new DataTable();
             sda.Fill(dt);
 
-            for (int i = 0; i < dt.Rows.Count; i++)
+         for (int i = 0; i < dt.Rows.Count; i++)
             {
-                //arr[i, 0] = dt.Rows[i]["AreaId"].ToString();
-                //arr[i, 1] = dt.Rows[i]["x"].ToString();
-                //arr[i, 2] = dt.Rows[i]["y"].ToString();
-                //arr[i, 3] = dt.Rows[i]["width"].ToString();
-                //arr[i, 4] = dt.Rows[i]["height"].ToString();
-                //arr[i, 5] = dt.Rows[i]["label"].ToString();
-                //arr[i, 6] = dt.Rows[i]["Id"].ToString();
-
-
+                
                 AnnotationArea Area = new AnnotationArea();
                 Area.id = int.Parse(dt.Rows[i]["AreaId"].ToString());
                 Area.x = int.Parse(dt.Rows[i]["X"].ToString());
@@ -117,10 +109,7 @@ namespace WebInterfaceDsign
         {
             if (Session["update"].ToString() == ViewState["update"].ToString())
             {
-        //        if (AnyAreaChanged.Value == "true")
-        //        {
-        //            UploadData_Click(sender, e);
-        //        }
+
 
                 if (currentImage > 0)
                 {
@@ -139,10 +128,7 @@ namespace WebInterfaceDsign
         {
             if (Session["update"].ToString() == ViewState["update"].ToString())
             {
-            //    if (AnyAreaChanged.Value == "true")
-            //    {
-            //        UploadData_Click(sender, e);
-            //    }
+           
 
                 if (currentImage < totalImages - 1)
                 {

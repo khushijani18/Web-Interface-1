@@ -445,7 +445,7 @@
                         closeAllLists(e.target);
                     });
                 }
-                var tags = ["dog", "cat", "mouse"];
+                var tags = ["dog", "cat", "mouse","car","Table" ,"Chair","Bottle" , "Box" ,"Pen","Pencil" ,"Laptop","Butterfly"];
                 autocomplete(document.getElementById("myInput"), tags);
             </script>
        
